@@ -23,11 +23,7 @@ a =holiday_hash[season][holiday] = supplies
 
 end 
 
-def all_winter_holiday_supplies(holiday_hash)
-array = holiday_hash[:winter].map do |holiday, items|
-    items
-  end
- end
+
 
 def all_supplies_in_holidays(holiday_hash) holiday_hash.each do |season, holiday|
     puts season.to_s.capitalize! << ":"
