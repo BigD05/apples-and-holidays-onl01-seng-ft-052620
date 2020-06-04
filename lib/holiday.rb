@@ -25,6 +25,7 @@ end
 
 def all_winter_holiday_supplies(holiday_hash)
   a = holiday_supplies[:winter][:supply]
+  return a
   
 
 end
