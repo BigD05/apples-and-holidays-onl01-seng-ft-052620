@@ -23,7 +23,14 @@ a =holiday_hash[season][holiday] = supplies
 
 end 
 
+def all_winter_holiday_supplies(holiday_hash)
+  # return an array of all of the supplies that are used in the winter season
 
+  array = holiday_hash[:winter].map do |holiday, items|
+    items
+  end
+  array.flatten
+end
 
 def all_supplies_in_holidays(holiday_hash) holiday_hash.each do |season, holiday|
     puts season.to_s.capitalize! << ":"
