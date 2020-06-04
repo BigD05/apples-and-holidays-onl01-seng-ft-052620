@@ -24,7 +24,8 @@ a =holiday_hash[season][holiday] = supplies
 end 
 
 def all_winter_holiday_supplies(holiday_hash)
-  holiday_supplies[:]
+  a = holiday_supplies[:winter]
+  
 
 end
 
