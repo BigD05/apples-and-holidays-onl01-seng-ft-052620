@@ -23,7 +23,7 @@ a =holiday_hash[season][holiday] = supplies
 
 end 
 
-def all_winter_holiday_supplies(holiday_hash)
+def all_winter_holiday_supplies(holiday_hash,holiday,supply)
   array = []
   array << holiday_supplies[:winter][:holiday][:supply].flatten
   
