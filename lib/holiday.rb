@@ -23,11 +23,11 @@ a =holiday_hash[season][holiday] = supplies
 
 end 
 
-def all_winter_holiday_supplies(holiday_hash,winter,holiday,supply)
-  array = []
-  a =holiday_supplies[winter][holiday][supply]
-  array << a 
-  
+def all_winter_holiday_supplies(holiday_hash)
+array = holiday_hash[:winter].map do |holiday, items|
+    items
+  end
+  array.flatten
   # return an array of all of the supplies that are used in the winter season
 
 end
